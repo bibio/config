@@ -7,6 +7,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/' }
 Plugin 'tpope/vim-rails.git'
 Plugin 'vim-scripts/dbext.vim'
 Plugin 'Shougo/unite.vim'
+nnoremap ,uf :Unite file
+nnoremap ,ub :Unite buffer
 " ファイル名補完
 Plugin 'L9'
 Plugin 'FuzzyFinder'
@@ -44,6 +46,9 @@ if !exists( "*EndToken" )
 endif
 
 imap <S-CR> <ESC>:execute 'normal o' . EndToken()<CR>O
+
+Plugin 'tpope/vim-bundler'
+"Plugin 'tpope/gem-browse'
 call vundle#end()
 
 set number
