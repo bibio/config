@@ -49,6 +49,8 @@ imap <S-CR> <ESC>:execute 'normal o' . EndToken()<CR>O
 
 Plugin 'tpope/vim-bundler'
 "Plugin 'tpope/gem-browse'
+
+Plugin 'kchmck/vim-coffee-script'
 call vundle#end()
 
 set number
