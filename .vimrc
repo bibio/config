@@ -44,6 +44,7 @@ if !exists( "*EndToken" )
     endif
   endfunction
 endif
+nnoremap ,rm :!bundle exec rspec %<CR>
 
 imap <S-CR> <ESC>:execute 'normal o' . EndToken()<CR>O
 
